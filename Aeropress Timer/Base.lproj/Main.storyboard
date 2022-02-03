@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Aeropress_Timer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="OPY-7j-4wN">
+                                <rect key="frame" x="50" y="44" width="314" height="818"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aeropress" translatesAutoresizingMaskIntoConstraints="NO" id="lW0-Pt-ZHr">
+                                        <rect key="frame" x="0.0" y="0.0" width="314" height="272.66666666666669"/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="2o8-3x-EyQ">
+                                        <rect key="frame" x="0.0" y="272.66666666666663" width="314" height="272.66666666666663"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2:30" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j2w-Yl-uHr">
+                                                <rect key="frame" x="0.0" y="0.0" width="314" height="126.33333333333333"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="75"/>
+                                                <color key="textColor" red="0.76027804610000005" green="0.61014956239999996" blue="0.31618124250000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="czn-ds-Pen">
+                                                <rect key="frame" x="0.0" y="146.33333333333331" width="314" height="126.33333333333331"/>
+                                                <subviews>
+                                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Vz2-WD-KTs">
+                                                        <rect key="frame" x="0.0" y="52.666666666666629" width="314" height="21"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="progressTintColor" red="0.78171133999999998" green="0.48361289499999999" blue="0.62884485720000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="trackTintColor" red="0.21660739183425903" green="0.073330201208591461" blue="0.33749192953109741" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </progressView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="Vz2-WD-KTs" firstAttribute="leading" secondItem="czn-ds-Pen" secondAttribute="leading" id="Alb-z9-vK2"/>
+                                                    <constraint firstItem="Vz2-WD-KTs" firstAttribute="centerY" secondItem="czn-ds-Pen" secondAttribute="centerY" id="Ded-Ka-9cb"/>
+                                                    <constraint firstItem="Vz2-WD-KTs" firstAttribute="top" secondItem="czn-ds-Pen" secondAttribute="top" constant="52.670000000000002" id="nz0-Ch-STg"/>
+                                                    <constraint firstItem="Vz2-WD-KTs" firstAttribute="centerX" secondItem="czn-ds-Pen" secondAttribute="centerX" id="wzt-l0-znY"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="PbI-Lx-Ou8">
+                                        <rect key="frame" x="0.0" y="545.33333333333337" width="314" height="272.66666666666663"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="9r9-TQ-lp9">
+                                                <rect key="frame" x="0.0" y="0.0" width="314" height="272.66666666666669"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vII-96-Qmz">
+                                                        <rect key="frame" x="0.0" y="0.0" width="157" height="272.66666666666669"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="tintColor" red="0.21660739183425903" green="0.073330201208591461" blue="0.33749192953109741" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" image="play.circle" catalog="system">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="60"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="startTimer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Y8g-aq-huD"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jbY-9a-HBZ">
+                                                        <rect key="frame" x="157" y="0.0" width="157" height="272.66666666666669"/>
+                                                        <color key="tintColor" red="0.21660739183425903" green="0.073330201208591461" blue="0.33749192953109741" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" image="stop.circle" catalog="system">
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="60"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="resetTimer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iVW-ye-A33"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OPY-7j-4wN" secondAttribute="trailing" constant="50" id="PHL-BT-wX9"/>
+                            <constraint firstItem="OPY-7j-4wN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="PZ4-su-dQ9"/>
+                            <constraint firstItem="OPY-7j-4wN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="vr4-4g-Jqd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="OPY-7j-4wN" secondAttribute="bottom" id="yPb-xw-key"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="progressBar" destination="Vz2-WD-KTs" id="4S7-c9-Xcw"/>
+                        <outlet property="startButton" destination="vII-96-Qmz" id="wsq-LL-607"/>
+                        <outlet property="timerDisplay" destination="j2w-Yl-uHr" id="PRh-Ya-H0B"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="30" y="70"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="aeropress" width="341.33334350585938" height="341.33334350585938"/>
+        <image name="play.circle" catalog="system" width="128" height="121"/>
+        <image name="stop.circle" catalog="system" width="128" height="121"/>
+    </resources>
+</document>
